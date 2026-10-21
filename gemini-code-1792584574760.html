@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kalender Hari-Hari Penting Satker | KPPN Yogyakarta</title>
+<meta name="description" content="Kalender interaktif hari-hari penting satker KPPN Yogyakarta.">
+<style>
+:root{--navy:#002850;--blue:#063b6d;--gold:#f5a018;--mist:#f4f8fc;--ink:#16324b;--line:#dbe7f1;--muted:#63778b;--kontrak:#f28c28;--spm:#2477c8;--rekon:#8054b8;--blu:#16835d;--hibah:#e8bd25;--admin:#94633e;--libur:#d9414e;--white:#fff;--shadow:0 12px 32px rgba(0,40,80,.08)}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,"Segoe UI",Arial,sans-serif;color:var(--ink);background:var(--mist);line-height:1.5}.topline{height:5px;background:var(--gold)}.wrap{max-width:1200px;width:calc(100% - 36px);margin:auto}.masthead{background:#fff;border-bottom:1px solid var(--line)}.masthead .wrap{display:flex;align-items:center;gap:14px;padding:15px 0}.brandmark{width:45px;height:45px;border-radius:12px;display:grid;place-items:center;background:var(--navy);color:var(--gold);font-size:22px;font-weight:900}.brand-title{font-weight:850;color:var(--navy);letter-spacing:.02em}.brand-sub{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.12em}.hero{background:linear-gradient(115deg,#002850,#063b6d 70%,#105381);color:white;position:relative;overflow:hidden}.hero:before{content:"";position:absolute;inset:0;opacity:.16;background-image:linear-gradient(#f5a018 1px,transparent 1px),linear-gradient(90deg,#f5a018 1px,transparent 1px);background-size:38px 38px;pointer-events:none}.hero-inner{position:relative;display:grid;grid-template-columns:1fr 260px;align-items:center;gap:35px;padding:38px 0}.eyebrow{font-size:12px;letter-spacing:.16em;text-transform:uppercase;font-weight:800;color:var(--gold)}h1{font-size:clamp(27px,4vw,43px);line-height:1.1;margin:9px 0 14px;max-width:720px}.hero p{max-width:680px;margin:0;color:#e2edf7}.calendar-art{height:210px;position:relative;perspective:700px}.paper{position:absolute;left:25%;top:8px;width:58%;height:178px;background:#fff;border-radius:12px;overflow:hidden;text-align:center;box-shadow:0 18px 30px #00152b66;transform-origin:top center}.paper.back{background:#dce8f2;transform:translate(9px,8px) rotate(5deg)}.paper.next{animation:next 4.8s infinite;background:#f8fbff}.paper.front{animation:peel 4.8s infinite}.paper-band{height:42px;background:var(--gold);color:var(--navy);font-size:12px;font-weight:900;letter-spacing:.14em;padding-top:12px}.paper-day{font-size:83px;line-height:1.5;color:var(--navy);font-weight:900}.rings{position:absolute;z-index:4;left:39%;right:39%;top:0;display:flex;justify-content:space-between}.rings i{width:10px;height:24px;border:4px solid #dce8f2;border-radius:8px}@keyframes peel{0%,35%{transform:rotateX(0);opacity:1}52%,83%{transform:rotateX(65deg) translateY(-65px) rotate(-8deg);opacity:0}100%{transform:rotateX(0);opacity:1}}@keyframes next{0%,35%{transform:translate(9px,8px) rotate(5deg)}55%,83%{transform:translate(0) rotate(0)}100%{transform:translate(9px,8px) rotate(5deg)}}
+main{padding:25px 0 50px}.panel{background:white;border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow);padding:22px}.section-head{display:flex;justify-content:space-between;gap:14px;align-items:center;flex-wrap:wrap}.section-head h2{margin:0;color:var(--navy);font-size:22px}.muted{color:var(--muted);font-size:13px}.toolbar{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:20px 0}.btn{border:1px solid var(--line);background:#fff;color:var(--blue);font:inherit;font-weight:800;border-radius:10px;padding:10px 13px;cursor:pointer}.btn:hover{border-color:var(--gold);background:#fffaf0}.btn.primary{background:var(--navy);color:#fff;border-color:var(--navy)}.month-title{min-width:190px;text-align:center;color:var(--navy);font-weight:850;font-size:20px;text-transform:capitalize}.calendar-layout{display:grid;grid-template-columns:minmax(0,1fr) 275px;gap:22px}.weekdays,.calendar-grid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:7px}.weekdays div{text-align:center;font-size:12px;font-weight:850;color:var(--muted);padding:8px 0}.day{border:1px solid #e1eaf2;background:#fff;border-radius:11px;min-height:88px;padding:8px;text-align:left;color:var(--navy);cursor:pointer;min-width:0;transition:transform .15s,border .15s;position:relative}.day:hover{border-color:var(--gold);transform:translateY(-2px)}.day.outside{opacity:.38}.day.selected{border:2px solid var(--blue);background:#edf5fc;padding:7px}.day.today .num{text-decoration:underline;text-decoration-color:var(--gold);text-decoration-thickness:3px;text-underline-offset:4px}.num{font-size:15px;font-weight:850}.dots{display:flex;flex-wrap:wrap;gap:4px;margin-top:9px}.dot{width:8px;height:8px;border-radius:50%;display:inline-block}.dot.kontrak,.swatch.kontrak{background:var(--kontrak)}.dot.spm,.swatch.spm{background:var(--spm)}.dot.rekonsiliasi,.swatch.rekonsiliasi{background:var(--rekon)}.dot.blu,.swatch.blu{background:var(--blu)}.dot.hibah,.swatch.hibah{background:var(--hibah)}.dot.administrasi,.swatch.administrasi{background:var(--admin)}.dot.libur,.swatch.libur{background:var(--libur)}.day-count{font-size:10px;color:var(--muted);margin-top:5px}.side h3{margin:0 0 6px;color:var(--navy)}.field{display:block;width:100%;border:1px solid #ccdae7;border-radius:10px;padding:11px 12px;font:inherit;background:white;color:var(--ink)}label{font-weight:800;font-size:13px;display:block;margin:15px 0 6px}.filters{display:flex;flex-wrap:wrap;gap:7px;margin-top:13px}.filter{font-size:12px;padding:7px 9px;border:1px solid var(--line);border-radius:9px;background:white;color:var(--blue);font-weight:800;cursor:pointer}.filter.active{background:var(--navy);border-color:var(--navy);color:white}.legend{display:flex;flex-wrap:wrap;gap:10px 15px;margin:17px 0 3px}.legend-item{display:flex;align-items:center;gap:7px;font-size:12px;color:#40566a}.swatch{width:10px;height:10px;border-radius:3px;flex-shrink:0}.results{margin-top:13px;display:grid;gap:8px;max-height:300px;overflow:auto}.result{width:100%;text-align:left;border:1px solid var(--line);border-radius:10px;padding:10px;background:#fff;cursor:pointer}.result:hover{border-color:var(--gold)}.result strong{display:block;color:var(--navy);font-size:13px}.result span{font-size:12px;color:var(--muted)}.agenda{margin-top:20px}.agenda-title{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}.agenda-title h2{margin:0;color:var(--navy);font-size:21px}.agenda-items{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:16px}.event-card{background:#f7fafd;border:1px solid var(--line);border-left:5px solid var(--blue);border-radius:12px;padding:15px}.event-card.kontrak{border-left-color:var(--kontrak)}.event-card.spm{border-left-color:var(--spm)}.event-card.rekonsiliasi{border-left-color:var(--rekon)}.event-card.blu{border-left-color:var(--blu)}.event-card.hibah{border-left-color:var(--hibah)}.event-card.administrasi{border-left-color:var(--admin)}.event-card.libur{border-left-color:var(--libur)}.event-cat{font-size:11px;font-weight:900;text-transform:uppercase;letter-spacing:.07em}.event-card h3{margin:5px 0;color:var(--navy);font-size:16px}.event-card p{margin:5px 0 0;color:#536679;font-size:13px;white-space:pre-line}.empty{padding:24px;text-align:center;background:#f7fafd;border:1px dashed #cbd9e6;border-radius:12px;color:var(--muted);margin-top:15px}.footer{background:#002850;color:#d8e7f5;padding:22px 0;font-size:12px}.footer strong{color:#fff}.modal{position:fixed;inset:0;z-index:20;background:#001b35b8;display:none;align-items:center;justify-content:center;padding:18px}.modal.show{display:flex}.modal-card{background:#fff;border-radius:18px;width:min(100%,560px);max-height:85vh;overflow:auto;padding:24px;box-shadow:0 25px 70px #00152b66;animation:pop .2s ease-out}.modal-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}.modal-head h2{margin:4px 0;color:var(--navy);font-size:22px}.close{border:0;background:#edf3f8;border-radius:9px;padding:8px;cursor:pointer;font-size:19px}.small-note{font-size:12px;color:var(--muted);margin-top:15px}@keyframes pop{from{opacity:0;transform:translateY(12px) scale(.98)}to{opacity:1;transform:none}}:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+@media(max-width:850px){.hero-inner{grid-template-columns:1fr 190px}.calendar-art{transform:scale(.85);transform-origin:center right}.calendar-layout{grid-template-columns:1fr}.side{border-top:1px solid var(--line);padding-top:18px}.results{max-height:220px}}@media(max-width:600px){.wrap{width:calc(100% - 22px)}.hero-inner{grid-template-columns:1fr;padding:29px 0 20px;gap:8px}.calendar-art{height:170px;width:230px;justify-self:center;transform:none}.paper{height:145px}.paper-day{font-size:66px}.paper-band{height:35px;padding-top:9px}.panel{padding:13px}.weekdays,.calendar-grid{gap:3px}.weekdays div{font-size:10px}.day{min-height:62px;padding:5px;border-radius:7px}.day.selected{padding:4px}.num{font-size:13px}.dots{gap:3px;margin-top:6px}.dot{width:6px;height:6px}.day-count{font-size:9px}.agenda-items{grid-template-columns:1fr}.month-title{min-width:150px;font-size:17px}.section-head h2{font-size:19px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+</style>
+</head>
+<body>
+<div class="topline"></div><header class="masthead"><div class="wrap"><div class="brandmark" aria-hidden="true">K</div><div><div class="brand-title">KPPN YOGYAKARTA</div><div class="brand-sub">Layanan · Informasi · Akuntabilitas</div></div></div></header>
+<section class="hero"><div class="wrap hero-inner"><div><div class="eyebrow">Pusat informasi kalender satker</div><h1>Kalender Hari-Hari Penting Satker</h1><p>Temukan tenggat, jadwal layanan, dan agenda penting satker dalam satu kalender interaktif. Pilih tanggal untuk melihat detail kegiatan, atau telusuri agenda berdasarkan kategori.</p></div><div class="calendar-art" aria-label="Animasi lembar kalender berganti tanggal"><div class="paper back"></div><div class="paper next"><div class="paper-band" id="next-month-label">KALENDER</div><div class="paper-day" id="next-day">16</div></div><div class="paper front"><div class="paper-band" id="front-month-label">KALENDER</div><div class="paper-day" id="front-day">15</div></div><div class="rings"><i></i><i></i></div></div></div></section>
+<main class="wrap"><section class="panel" aria-labelledby="calendar-title"><div class="section-head"><div><h2 id="calendar-title">Kalender kegiatan</h2><div class="muted">Klik tanggal untuk membuka ringkasan kegiatan.</div></div></div>
+<div class="toolbar"><button class="btn" id="prev-month" aria-label="Bulan sebelumnya">← Sebelumnya</button><div class="month-title" id="month-title" aria-live="polite"></div><button class="btn" id="next-month" aria-label="Bulan berikutnya">Berikutnya →</button><button class="btn primary" id="today-btn">Hari ini</button><button class="btn" id="refresh-btn">↻ Perbarui data</button></div>
+<div class="calendar-layout"><div><div class="weekdays" aria-hidden="true"><div>Sen</div><div>Sel</div><div>Rab</div><div>Kam</div><div>Jum</div><div>Sab</div><div>Min</div></div><div class="calendar-grid" id="calendar-grid" role="grid" aria-label="Kalender bulanan"></div><div class="legend" id="legend"></div></div>
+<aside class="side"><h3>Cari hari penting</h3><div class="muted">Cari kegiatan, kategori, atau tanggal.</div><label for="search-text">Kata kunci</label><input class="field" id="search-text" type="search" placeholder="Contoh: SPM, kontrak, 15 Oktober…"><label for="category-select">Kategori</label><select class="field" id="category-select"><option value="all">Semua kategori</option><option value="kontrak">KONTRAK</option><option value="spm">SPM</option><option value="rekonsiliasi">REKONSILIASI</option><option value="blu">BLU/PNBP</option><option value="hibah">HIBAH/PHLN</option><option value="administrasi">ADMINISTRASI</option><option value="libur">HARI LIBUR</option></select><div class="filters" id="quick-filters"></div><div class="muted" id="search-count" aria-live="polite" style="margin-top:14px"></div><div class="results" id="search-results"></div></aside></div>
+</section>
+<section class="panel agenda" aria-labelledby="agenda-heading"><div class="agenda-title"><div><div class="eyebrow" style="color:#946300">Rincian kegiatan</div><h2 id="agenda-heading">Pilih tanggal pada kalender</h2></div><span class="muted" id="agenda-count"></span></div><div class="agenda-items" id="agenda-items"></div><div class="empty" id="agenda-empty">Pilih tanggal untuk melihat kegiatan yang tercatat.</div></section>
+<p class="small-note">Sumber agenda: Spreadsheet Publik KPPN Yogyakarta. Kategori warna ditentukan otomatis berdasarkan kata kunci pada judul/deskripsi acara.</p></main>
+<footer class="footer"><div class="wrap"><strong>Kalender Hari-Hari Penting Satker</strong><br>KPPN Yogyakarta · Informasi jadwal dapat berubah mengikuti pembaruan pada kalender sumber.</div></footer>
+<div class="modal" id="date-modal" role="presentation"><section class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-title"><div class="modal-head"><div><div class="eyebrow" style="color:#946300">Detail tanggal</div><h2 id="modal-title"></h2></div><button class="close" id="close-modal" aria-label="Tutup pop-up">✕</button></div><div id="modal-items"></div><div class="small-note">Informasi ditampilkan berdasarkan acara yang ditemukan pada kalender sumber.</div></section></div>
+<script>
+// SUMBER DATA: CSV Publik dari Google Sheets
+const CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTIzvafQcOYtdpsCVM5wu0LPm_omWbh4OkOu_Z4J3iv4pH6f25k3YAZyP5MR-Pyng/pub?gid=361434481&single=true&output=csv';
+
+const CATS={kontrak:{name:'KONTRAK',color:'var(--kontrak)',keywords:['kontrak','addendum','pendaftaran kontrak']},spm:{name:'SPM',color:'var(--spm)',keywords:['spm','pembayaran','pengajuan akhir tahun','akhir tahun','sp2d']},rekonsiliasi:{name:'REKONSILIASI',color:'var(--rekon)',keywords:['rekonsiliasi','transaksi keuangan','bmn','barang milik negara']},blu:{name:'BLU/PNBP',color:'var(--blu)',keywords:['sp3b','blu','pnbp','saldo kas','investasi']},hibah:{name:'HIBAH/PHLN',color:'var(--hibah)',keywords:['hibah','phln','pdn','rekening hibah','revisi anggaran hibah']},administrasi:{name:'ADMINISTRASI',color:'var(--admin)',keywords:['kkp','retur','tup','proyeksi','administrasi']},libur:{name:'HARI LIBUR',color:'var(--libur)',keywords:['libur','cuti bersama','holiday']}};
+const $=id=>document.getElementById(id); const fmtDate=new Intl.DateTimeFormat('id-ID',{weekday:'long',day:'numeric',month:'long',year:'numeric',timeZone:'Asia/Jakarta'}); const fmtMonth=new Intl.DateTimeFormat('id-ID',{month:'long',year:'numeric'}); const fmtTime=new Intl.DateTimeFormat('id-ID',{hour:'2-digit',minute:'2-digit',timeZone:'Asia/Jakarta'});
+let events=[], displayed=new Date(), selected=keyOf(new Date()), activeCategory='all',lastFocus=null;
+function keyOf(d){return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`}
+function parseKey(k){let [y,m,d]=k.split('-').map(Number);return new Date(y,m-1,d)}
+function escapeHtml(s=''){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function categoryFor(title,detail,isHoliday=false){if(isHoliday)return 'libur';let s=(title+' '+detail).toLocaleLowerCase('id-ID');for(const id of ['kontrak','spm','rekonsiliasi','blu','hibah','libur','administrasi'])if(CATS[id].keywords.some(k=>s.includes(k)))return id;return 'administrasi'}
+
+// Parser CSV serbaguna
+function parseCSVRow(row) {
+    const res = [];
+    let cell = '';
+    let inQuotes = false;
+    for (let i = 0; i < row.length; i++) {
+        const c = row[i];
+        if (c === '"' && row[i+1] === '"') { cell += '"'; i++; }
+        else if (c === '"') { inQuotes = !inQuotes; }
+        else if ((c === ',' || c === ';') && !inQuotes) { res.push(cell.trim()); cell = ''; }
+        else { cell += c; }
+    }
+    res.push(cell.trim());
+    return res;
+}
+
+function parseStandardDate(str) {
+    if (!str) return null;
+    str = str.trim();
+    let m = str.match(/^(\d{4})[-/](\d{1,2})[-/](\d{1,2})/);
+    if (m) return `${m[1]}-${String(m[2]).padStart(2,'0')}-${String(m[3]).padStart(2,'0')}`;
+    m = str.match(/^(\d{1,2})[-/](\d{1,2})[-/](\d{4})/);
+    if (m) return `${m[3]}-${String(m[2]).padStart(2,'0')}-${String(m[1]).padStart(2,'0')}`;
+    return null;
+}
+
+function parseCSV(text) {
+    const lines = text.split(/\r?\n/).filter(line => line.trim() !== '');
+    if (lines.length < 2) return [];
+    
+    const headers = parseCSVRow(lines[0]).map(h => h.toLowerCase());
+    
+    let dateIdx = headers.findIndex(h => h.includes('tanggal') || h.includes('date') || h.includes('tgl'));
+    let titleIdx = headers.findIndex(h => h.includes('kegiatan') || h.includes('acara') || h.includes('title') || h.includes('nama') || h.includes('agenda'));
+    let detailIdx = headers.findIndex(h => h.includes('deskripsi') || h.includes('keterangan') || h.includes('detail') || h.includes('desc'));
+    
+    if (dateIdx === -1) dateIdx = 0;
+    if (titleIdx === -1) titleIdx = dateIdx === 0 ? 1 : 0;
+    
+    const parsed = [];
+    for (let i = 1; i < lines.length; i++) {
+        const row = parseCSVRow(lines[i]);
+        if (row.length <= dateIdx) continue;
+        
+        const rawDate = row[dateIdx];
+        const dateKey = parseStandardDate(rawDate);
+        if (!dateKey) continue;
+        
+        const title = row[titleIdx] || '(Tanpa judul)';
+        const detail = detailIdx !== -1 && row[detailIdx] ? row[detailIdx] : '';
+        const category = categoryFor(title, detail, false);
+        
+        parsed.push({
+            id: `csv-${i}-${dateKey}`,
+            date: dateKey,
+            title: title,
+            detail: detail,
+            category: category,
+            time: '',
+            location: '',
+            url: '',
+            allDay: true
+        });
+    }
+    return parsed;
+}
+
+async function loadEvents(){
+    try {
+        const res = await fetch(CSV_URL, { cache: 'no-store' });
+        if (!res.ok) throw new Error(`HTTP Error ${res.status}`);
+        const text = await res.text();
+        events = parseCSV(text).sort((a,b)=>a.date.localeCompare(b.date));
+        renderAll();
+    } catch(err) {
+        console.error('Gagal memuat data CSV:', err);
+        events = [];
+        renderAll();
+    }
+}
+
+function filteredEvents(){let term=$('search-text').value.trim().toLocaleLowerCase('id-ID');let cat=$('category-select').value;return events.filter(e=>(cat==='all'||e.category===cat)&&(activeCategory==='all'||e.category===activeCategory)&&(!term||`${e.title} ${e.detail} ${CATS[e.category].name} ${fmtDate.format(parseKey(e.date))}`.toLocaleLowerCase('id-ID').includes(term))).sort((a,b)=>a.date.localeCompare(b.date))}
+function eventCard(e){let time=e.time?`<p>◷ ${escapeHtml(e.time)}</p>`:(e.allDay?'<p>Sepanjang hari</p>':'');let loc=e.location?`<p>⌖ ${escapeHtml(e.location)}</p>`:'';let detail=e.detail?`<p>${escapeHtml(e.detail)}</p>`:'';let link=e.url?`<p><a href="${escapeHtml(e.url)}" target="_blank" rel="noopener">Lihat detail ↗</a></p>`:'';return `<article class="event-card ${e.category}"><div class="event-cat" style="color:${CATS[e.category].color}">${CATS[e.category].name}</div><h3>${escapeHtml(e.title)}</h3>${time}${detail}${loc}${link}</article>`}
+function renderCalendar(){ $('month-title').textContent=fmtMonth.format(displayed);const first=new Date(displayed.getFullYear(),displayed.getMonth(),1),offset=(first.getDay()+6)%7,start=new Date(first.getFullYear(),first.getMonth(),1-offset),today=keyOf(new Date()),frag=document.createDocumentFragment();for(let i=0;i<42;i++){let d=new Date(start.getFullYear(),start.getMonth(),start.getDate()+i),k=keyOf(d),dayEvents=events.filter(e=>e.date===k),btn=document.createElement('button');btn.type='button';btn.className='day';if(d.getMonth()!==displayed.getMonth())btn.classList.add('outside');if(k===selected)btn.classList.add('selected');if(k===today)btn.classList.add('today');btn.setAttribute('role','gridcell');btn.setAttribute('aria-pressed',String(k===selected));btn.setAttribute('aria-label',`${fmtDate.format(d)}${dayEvents.length?' · '+dayEvents.length+' kegiatan':''}`);let dots=dayEvents.slice(0,8).map(e=>`<span class="dot ${e.category}" title="${escapeHtml(CATS[e.category].name)}"></span>`).join('');btn.innerHTML=`<span class="num">${d.getDate()}</span><div class="dots">${dots}</div>${dayEvents.length?`<div class="day-count">${dayEvents.length} agenda</div>`:''}`;btn.addEventListener('click',()=>selectDate(k,btn,true));frag.appendChild(btn)}$('calendar-grid').replaceChildren(frag)}
+function renderLegend(){$('legend').innerHTML=Object.entries(CATS).map(([id,c])=>`<span class="legend-item"><i class="swatch ${id}"></i>${c.name}</span>`).join('');$('quick-filters').innerHTML=Object.entries(CATS).map(([id,c])=>`<button class="filter ${activeCategory===id?'active':''}" data-quick="${id}">${c.name}</button>`).join('');document.querySelectorAll('[data-quick]').forEach(b=>b.onclick=()=>{activeCategory=activeCategory===b.dataset.quick?'all':b.dataset.quick;renderLegend();renderSearch()})}
+function renderAgenda(){const dayEvents=events.filter(e=>e.date===selected).sort((a,b)=>(a.time||'').localeCompare(b.time||''));$('agenda-heading').textContent=fmtDate.format(parseKey(selected));$('agenda-count').textContent=`${dayEvents.length} kegiatan`; $('agenda-items').innerHTML=dayEvents.map(eventCard).join('');$('agenda-empty').style.display=dayEvents.length?'none':'block';$('agenda-empty').textContent='Tidak ada kegiatan tercatat pada tanggal ini.'}
+function renderSearch(){let matches=filteredEvents();$('search-count').textContent=`${matches.length} tanggal/kegiatan ditemukan`;let shown=matches.slice(0,60);$('search-results').innerHTML=shown.map(e=>`<button class="result" data-result="${escapeHtml(e.id)}"><strong>${escapeHtml(fmtDate.format(parseKey(e.date)))}</strong><span>${escapeHtml(e.title)} · ${CATS[e.category].name}</span></button>`).join('');document.querySelectorAll('[data-result]').forEach(b=>b.onclick=()=>{let e=events.find(x=>x.id===b.dataset.result);if(e)selectDate(e.date,b,true)});renderCalendar()}
+function renderAll(){renderLegend();renderCalendar();renderAgenda();renderSearch()}
+function selectDate(k,trigger,showModal){selected=k;const d=parseKey(k);displayed=new Date(d.getFullYear(),d.getMonth(),1);renderAll();if(showModal)openModal(trigger)}
+function openModal(trigger){lastFocus=trigger;const list=events.filter(e=>e.date===selected).sort((a,b)=>(a.time||'').localeCompare(b.time||''));$('modal-title').textContent=fmtDate.format(parseKey(selected));$('modal-items').innerHTML=list.length?`<div class="agenda-items" style="grid-template-columns:1fr">${list.map(eventCard).join('')}</div>`:`<div class="empty">Tidak ada kegiatan yang tercatat pada tanggal ini.</div>`;$('date-modal').classList.add('show');$('close-modal').focus()}
+function closeModal(){$('date-modal').classList.remove('show');if(lastFocus?.isConnected)lastFocus.focus()}
+$('prev-month').onclick=()=>{displayed=new Date(displayed.getFullYear(),displayed.getMonth()-1,1);renderCalendar()};$('next-month').onclick=()=>{displayed=new Date(displayed.getFullYear(),displayed.getMonth()+1,1);renderCalendar()};$('today-btn').onclick=()=>selectDate(keyOf(new Date()),$('today-btn'),false);$('refresh-btn').onclick=loadEvents;$('search-text').addEventListener('input',renderSearch);$('category-select').addEventListener('change',renderSearch);$('close-modal').onclick=closeModal;$('date-modal').addEventListener('click',e=>{if(e.target===$('date-modal'))closeModal()});document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
+function animatePage(){const now=new Date();$('front-day').textContent=now.getDate();$('next-day').textContent=now.getDate()===new Date(now.getFullYear(),now.getMonth()+1,0).getDate()?1:now.getDate()+1;$('front-month-label').textContent=new Intl.DateTimeFormat('id-ID',{month:'long'}).format(now).toLocaleUpperCase('id-ID');let next=new Date(now);next.setDate(now.getDate()+1);$('next-month-label').textContent=new Intl.DateTimeFormat('id-ID',{month:'long'}).format(next).toLocaleUpperCase('id-ID')}
+animatePage();setInterval(animatePage,60000);renderAll();loadEvents();setInterval(()=>{if(!document.hidden)loadEvents()},5*60*1000);
+</script>
+</body></html>
